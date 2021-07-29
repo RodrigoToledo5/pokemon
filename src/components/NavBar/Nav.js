@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {Searcher} from './Searcher';
 import { useDispatch, useSelector } from 'react-redux';
@@ -30,7 +30,7 @@ export default function Nav(){
                     </div>
                     {fotopokemon.Capture?showTakebutton():null}
                     <span  className="flex-item">
-                        <img className="img" src={fotopokemon.Pokemon.sprites.front_default}>
+                        <img className="img" src={fotopokemon.Pokemon.sprites.front_default} alt="pokemon">
                             </img>
                     </span>
                     {fotopokemon.Pokemon.types.map((slot)=>(
@@ -58,12 +58,12 @@ export default function Nav(){
                         Battle
                 </NavLink>
 
-                <NavLink className="btn" to="/Contact">
+                {/* <NavLink className="btn" to="/Contact">
                         Contact
-                </NavLink>
+                </NavLink> */}
 
                 <Searcher/>
-                {fotopokemon.Pokemon.name?showcard():null}
+                {fotopokemon.Pokemon?showcard():null}
             </div>   
         </nav>
         

@@ -1,13 +1,14 @@
 export const GET_POKEMON='GET_POKEMON';
+export const GET_COUNTRIES='GET_COUNTRIES';
 export const RANDOM_POKEMON='RANDOM_POKEMON';
 export const CAPTURE_POKEMON='CAPTURE_POKEMON';
 
 export const getPokemon =(pokemon_name)=>(dispatch)=> { 
-    fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon_name.toLowerCase())
+    fetch("http://localhost:3001/Countries?offset=0")
     .then(response => response.json())
     .then(json => {
         dispatch({
-             type: 'GET_POKEMON',
+             type: 'GET_COUNTRIES',
             payload: json });
         });    
 }
@@ -17,6 +18,7 @@ export const takePokemon =(pokemon)=>(dispatch)=> {
 
     randomice.stats.map((stat)=>{
         stat.base_stat=Math.trunc(stat.base_stat*Math.random()+1);
+        return null
     })
 
    dispatch({type:"TAKE_POKEMON",payload:pokemon})

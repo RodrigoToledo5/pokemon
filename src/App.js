@@ -8,6 +8,7 @@ import Battle from './components/Battle';
 
 function App() {
   return (
+    
     <div className="body">
       <Route path="/" component={Nav}/>
       <Route exact path="/" component={Home}/>

@@ -22,7 +22,7 @@ export default function Battle(){
     function renderPick(torender){
         if (torender.sprites){
         return(
-            <img src={torender.sprites.front_default}></img>
+            <img src={torender.sprites.front_default} alt="pokemon"></img>
         )
         }
     }
@@ -36,18 +36,24 @@ export default function Battle(){
 
     function renderNext(){
         return(
-            <button onClick={giveRandom} >Next Round</button>
+            <button className="btn_fgt" onClick={giveRandom} >Next Round</button>
         )
     }
 
     function renderReady(){
         return(
-            <button onClick={()=>setTimeout(dispatch(letHit(true)),500)} >Im ready</button>
+            <button className="btn_fgt" onClick={()=>setTimeout(dispatch(letHit(true)),500)} >Im ready</button>
         )
     }
     return(
         <div className="flex-cointaine_home" >
             <h1 className="text_home">Prepare to battle</h1>
+
+            <div className="btn__cointainer">
+                <div className="ready-btn">
+                            {renderBtn()}
+                </div>
+            </div>
             <div><div className="text_home_lorem">
                 <div className="flex-cointainer__card">
                     <div className="card_tobaltte__player">
@@ -57,13 +63,11 @@ export default function Battle(){
                         <div>HP:{state.pick.stats?state.pick.stats[0].base_stat:"0"}</div>
                         <div>ATK:{state.pick.stats?state.pick.stats[1].base_stat:"0"}</div>
                     </div>
-                    <div className="ready-btn">
-                        {renderBtn()}
-                    </div>
+                    
                     
                     <div className="ring">
                         <div>{state.msj}</div>
-                        <div>Socre:{state.score}</div>
+                        <div>Score:{state.score}</div>
                     </div>
                     <div className="card_tobaltte">
                         {renderPick(state.oponent)}

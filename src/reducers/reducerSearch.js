@@ -1,7 +1,7 @@
-import { GET_POKEMON,RANDOM_POKEMON, CAPTURE_POKEMON } from "../actions";
+import { GET_COUNTRIES,RANDOM_POKEMON, CAPTURE_POKEMON } from "../actions";
 
 const initialState={
-    Pokemon:{},
+    Countries:[],
     Capture:true,
     Enemy:{}
 }
@@ -9,11 +9,11 @@ const initialState={
 export default function pokemonSearch(state=initialState,action){
    
     switch(action.type){
-        case GET_POKEMON:
+        case GET_COUNTRIES:
             //console.log("paso")
             return{
                 ...state,
-                Pokemon:action.payload,
+                Countries:state.Countries.concat(action.payload)
             };
         case RANDOM_POKEMON:
                // console.log("paso")

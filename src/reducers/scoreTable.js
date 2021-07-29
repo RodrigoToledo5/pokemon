@@ -26,7 +26,7 @@ export default function scoreTable(state=inicialState,action){
         
         case "TAKE_POKEMON":
             //console.log(action.payload)
-            if(state.bag.find(pokemon=>pokemon.id==action.payload.id)){
+            if(state.bag.find(pokemon=>pokemon.id===action.payload.id)){
                 
                 return {...state}
             }
@@ -40,6 +40,7 @@ export default function scoreTable(state=inicialState,action){
             if (state.bag.length>0){
                 var selected=state.bag.filter((pokemon)=>{
                     if(pokemon.id===action.payload) return pokemon
+                    return null
             })
             selected=selected[0];
             }
@@ -50,8 +51,10 @@ export default function scoreTable(state=inicialState,action){
             }
         case "RANDOM_ENEMY":
 
+
             action.payload.stats.map(stat=>{
                 stat.base_stat=Math.trunc(stat.base_stat*Math.random()+1)
+                return null
             })
             
             return{
@@ -62,6 +65,10 @@ export default function scoreTable(state=inicialState,action){
              
             // var damage=0;
             if(state.oponent.stats){
+                if(!state.pick.stats){
+                    alert("Pickea un pókemon primero :D")
+                    return state
+                }
                 if(state.oponent.stats[5].base_stat<state.pick.stats[5].base_stat){
                     state.msj="Golpeaste primero";
                     state.oponent.stats[0].base_stat=state.oponent.stats[0].base_stat-state.pick.stats[1].base_stat;
@@ -81,21 +88,21 @@ export default function scoreTable(state=inicialState,action){
                         return {
                             ...state,
                             pick:{},
-                            bag:state.bag.filter(pokemon=>pokemon.id!=state.pick.id),
+                            bag:state.bag.filter(pokemon=>pokemon.id!==state.pick.id),
                             score:state.score-10
                     
                         }
                     }
                 }
                 else{
-                    state.msj="El oponente ataco primero";
+                    state.msj="El oponente atacó primero";
                     state.pick.stats[0].base_stat=state.pick.stats[0].base_stat-state.oponent.stats[1].base_stat;
                     if(state.pick.stats[0].base_stat<=0){
                         alert("Tu oponente te ha derrotado, tu pokemon ha muerto los siento :(")
                         return {
                             ...state,
                             pick:{},
-                            bag:state.bag.filter(pokemon=>pokemon.id!=state.pick.id),
+                            bag:state.bag.filter(pokemon=>pokemon.id!==state.pick.id),
                             score:state.score-10,
                         }
                     }

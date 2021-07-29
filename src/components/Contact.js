@@ -25,7 +25,7 @@ export default function Contact(){
                 <div className="form-img"> 
                         <div className="img-container">
                             <div>
-                                <img src={IMG}/>
+                                <img src={IMG} alt="pokemon"/>
                             </div>
                         </div>
                     </div>
