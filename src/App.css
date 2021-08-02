@@ -271,14 +271,15 @@
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 30px;
-  width: 20vh;
-  max-height: 3vh;
+  width: 19vh;
+  max-height: 1vh;
+  margin-top: 2px;
   margin-left: 3px;
   margin-right: 3px;
+  margin-bottom: 2px;
   text-align: center;
-  border-radius: 1.5vh;
-  border-bottom:solid #fff;
-  border-right:solid #fff;
+  border-radius: 1vh;
+  border:dashed 10px black;
 }
 .flex-cointainer__card{
   display: flex;
@@ -557,6 +558,115 @@
     color: #000;
     height: 150px;
     width: 120px;
+  }
+  
+  .card_tobaltte__player{
+    padding-top: 50px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 8px;
+    color: #000;
+    height: 150px;
+    width: 120px;
+  } 
+
+  .form-img{
+    flex:1;
+    display: flex;
+    max-width:200px;
+    order:1;
+  }
+  .img-container{
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .Navbar_cointainer{
+    display: flex;
+    flex-direction: row;
+    background-color:transparent;
+    flex-wrap: nowrap;
+    max-height: 30vh;
+    margin-top: 20px;
+    padding: 2vh;
+    margin-bottom: 170px;
+  }
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    background-color:transparent;
+    flex-wrap: wrap;
+    font-size: 12px;
+    max-height: 70px;
+    margin-bottom: 1000px;
+  }
+
+  .flex-cointainer__card{
+    display: flex;
+    border:none;
+    background-color:transparent;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
+  
+  .flex-item{
+    background-color: rgb(190, 15, 15);
+    padding-top: 17px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 30px;
+    width: 100px;
+    max-height: 3vh;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    border-radius: 1.5vh;
+  }
+  .ring{
+    font-size: 9px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: white;
+    height: 100px;
+    width: 10px;
+    color:#000;
+    margin-left: 1px;
+    margin-right: 1px;
+    flex: 2;
+  }
+  .img_tobattle{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 40%;
+    left: 20%;
+  }
+  
+  .card_tobaltte{
+    padding-top: 20px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 8px;
+    color: #000;
+    height: 150px;
+    width: 120px;
+  }
+  .ready-btn{
+    display: flex;
+    justify-content: space-between;
+    background:transparent;
+    padding: 10px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 200px;
   }
   
   .card_tobaltte__player{
