@@ -19,7 +19,7 @@ export default function Nav(){
     function showTakebutton(){
         return(
         <span className="flex-item">
-            <button className={buttomclasstest} onClick={onClickhandle}>O</button>
+            <button className={buttomclasstest} onClick={onClickhandle}></button>
         </span>
         )
     }
@@ -58,9 +58,9 @@ export default function Nav(){
                         Battle
                 </NavLink>
 
-                {/* <NavLink className="btn" to="/Contact">
+                <NavLink className="btn" to="/Contact">
                         Contact
-                </NavLink> */}
+                </NavLink>
 
                 <Searcher/>
                 {fotopokemon.Pokemon?showcard():null}

@@ -2,6 +2,7 @@ export const GET_POKEMON='GET_POKEMON';
 export const GET_COUNTRIES='GET_COUNTRIES';
 export const RANDOM_POKEMON='RANDOM_POKEMON';
 export const CAPTURE_POKEMON='CAPTURE_POKEMON';
+export const SEND_MSJ='SEND_MSJ';
 
 export const getPokemon =(pokemon_name)=>(dispatch)=> { 
     fetch("http://localhost:3001/Countries?offset=0")
@@ -36,6 +37,19 @@ export const capturePokemon =(bolean)=>(dispatch)=> {
     dispatch ({type:"CAPTURE_POKEMON", payload:bolean})
     
  }
+
+export const actualizarchat=(msj)=>(dispatch)=>{
+    console.log(msj)
+    const chatid="-1001535028249";
+    const token="1944824308:AAGo_SK4i87JoZbjbbyN_jFrAD_HY4KtLu4";
+    fetch( `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatid}&text=${msj}`)
+   .then(response => response.json())
+   .then(json => {
+       dispatch({
+            type: 'SEND_MSJ',
+           payload: json });
+       });   
+}
 
 export const letFigth =(bolean)=>(dispatch)=> { 
     // console.log(bolean)

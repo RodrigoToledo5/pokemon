@@ -20,10 +20,37 @@ export default function Battle(){
         setTimeout(dispatch(letHit(true)),500)
     }
     function renderPick(torender){
-        if (torender.sprites){
-        return(
-            <img src={torender.sprites.front_default} alt="pokemon"></img>
-        )
+        if(torender.sprites){
+            if (torender.sprites.versions["generation-v"]["black-white"].animated.back_default){
+            return(
+                <>
+                    <img src={torender.sprites.versions["generation-v"]["black-white"].animated.back_default} alt="pokemon"></img>
+                </>
+            )}
+            else{
+                return(
+                    <>
+                    <img src={torender.sprites.back_default} alt="pokemon"></img>
+                    </>
+                )
+            }
+        }
+    }
+    function renderEnemy(torender){
+        if(torender.sprites){
+            if (torender.sprites.versions["generation-v"]["black-white"].animated.front_default){
+            return(
+                <>
+                    <img src={torender.sprites.versions["generation-v"]["black-white"].animated.front_default} alt="pokemon"></img>
+                </>
+            )}
+            else{
+                return(
+                    <>
+                    <img src={torender.sprites.front_default} alt="pokemon"></img>
+                    </>
+                )
+            }
         }
     }
     function renderBtn(){
@@ -70,7 +97,7 @@ export default function Battle(){
                         <div>Score:{state.score}</div>
                     </div>
                     <div className="card_tobaltte">
-                        {renderPick(state.oponent)}
+                        {renderEnemy(state.oponent)}
                         <br></br>
                         <span>{state.oponent.name&&state.oponent.name[0].toUpperCase()+state.oponent.name.substring(1,state.oponent.name.length)}</span>
                         <div>HP:{state.oponent.stats?state.oponent.stats[0].base_stat:"0"}</div>

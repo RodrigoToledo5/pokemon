@@ -1,14 +1,22 @@
-import { GET_COUNTRIES,RANDOM_POKEMON, CAPTURE_POKEMON } from "../actions";
+import { GET_COUNTRIES,RANDOM_POKEMON, CAPTURE_POKEMON,SEND_MSJ } from "../actions";
 
 const initialState={
     Countries:[],
     Capture:true,
-    Enemy:{}
+    Enemy:{},
+    msj:{}
 }
 
 export default function pokemonSearch(state=initialState,action){
    
     switch(action.type){
+        case SEND_MSJ:
+            console.log(action.payload)
+            return {
+                ...state,
+                msj:action.payload
+            }
+
         case GET_COUNTRIES:
             //console.log("paso")
             return{

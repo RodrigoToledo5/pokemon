@@ -72,8 +72,7 @@ export default function scoreTable(state=inicialState,action){
                 if(state.oponent.stats[5].base_stat<state.pick.stats[5].base_stat){
                     state.msj="Golpeaste primero";
                     state.oponent.stats[0].base_stat=state.oponent.stats[0].base_stat-state.pick.stats[1].base_stat;
-                    
-                    
+    
                     if(state.oponent.stats[0].base_stat<=0){ 
                         alert("Oponente derrotado")
                         return {
