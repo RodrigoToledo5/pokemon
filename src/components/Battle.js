@@ -84,8 +84,7 @@ export default function Battle(){
             <div><div className="text_home_lorem">
                 <div className="flex-cointainer__card">
                     <div className="card_tobaltte__player">
-                        {renderPick(state.pick)}
-                        <br></br>
+                        <div className="img_tobattle">{renderPick(state.pick)}</div>
                         <span>{state.pick.name&&state.pick.name[0].toUpperCase()+state.pick.name.substring(1,state.pick.name.length)}</span>
                         <div>HP:{state.pick.stats?state.pick.stats[0].base_stat:"0"}</div>
                         <div>ATK:{state.pick.stats?state.pick.stats[1].base_stat:"0"}</div>
@@ -97,8 +96,7 @@ export default function Battle(){
                         <div>Score:{state.score}</div>
                     </div>
                     <div className="card_tobaltte">
-                        {renderEnemy(state.oponent)}
-                        <br></br>
+                        <div className="img_tobattle">{renderEnemy(state.oponent)}</div>
                         <span>{state.oponent.name&&state.oponent.name[0].toUpperCase()+state.oponent.name.substring(1,state.oponent.name.length)}</span>
                         <div>HP:{state.oponent.stats?state.oponent.stats[0].base_stat:"0"}</div>
                         <div>ATK:{state.oponent.stats?state.oponent.stats[1].base_stat:"0"}</div>

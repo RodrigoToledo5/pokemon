@@ -37,15 +37,15 @@ function showalter(poke){
                 return(
                 <> 
                     <span onClick={()=>handleSelect(pokemon.id)} key={i} className={pokemon.is_default?"flex-item__card":"flex-item__card_selected"}>
-                        <span>{pokemon.name[0].toUpperCase()}{pokemon.name.substring(1,pokemon.name.length)}
+                        <span key={i}>{pokemon.name[0].toUpperCase()}{pokemon.name.substring(1,pokemon.name.length)}
                         </span>
-                        <div><img className="img_card" src={checkimg(pokemon)?showimg(pokemon):showalter(pokemon)} alt="pokemon"/>
+                        <div><img key={i} className="img_card" src={checkimg(pokemon)?showimg(pokemon):showalter(pokemon)} alt="pokemon"/>
                         {i}
                         </div>
-                        {pokemon.stats.map((stat)=>{
+                        {pokemon.stats.map((stat,i)=>{
                             return(
                             <>
-                                <div className="card_text">{stat.stat.name[0].toUpperCase()}{stat.stat.name.substring(1,stat.stat.name.length)}:{stat.base_stat}</div>
+                                <div key={i+1000} className="card_text">{stat.stat.name[0].toUpperCase()}{stat.stat.name.substring(1,stat.stat.name.length)}:{stat.base_stat}</div>
                             </>
                             )
                         })}

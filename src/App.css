@@ -544,15 +544,22 @@
     width: 100px;
     color:#000;
   }
+  .img_tobattle{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 40%;
+    left: 20%;
+  }
   
   .card_tobaltte{
-    padding-top: 50px;
+    padding-top: 20px;
     padding: 3px;
     border-radius: 10px;
     background-color: white;
     font-size: 8px;
     color: #000;
-    height: 130px;
+    height: 150px;
     width: 120px;
   }
   
@@ -563,7 +570,7 @@
     background-color: white;
     font-size: 8px;
     color: #000;
-    height: 130px;
+    height: 150px;
     width: 120px;
   } 
 }
