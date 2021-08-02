@@ -70,7 +70,7 @@
   margin: 0.5vh;
   padding: 10px;
   padding-top: 20px;
-  background-color:transparent;
+  background-color:linear-gradient(transparent,rgb(18, 40, 102));
   color:rgb(190, 15, 15);
   border: solid 5px rgb(190, 15, 15);
   border-radius: 0.7vh;
@@ -93,23 +93,20 @@
   
 }
 .flex-cointaine_home{
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 100vh;
+  border-radius: 1vh;
+  background:linear-gradient(transparent,rgb(18, 40, 102));
   justify-content: center;
   animation:container 1s;
-  background-attachment: fixed;
 }
 @keyframes container {
   0% {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background:linear-gradient(transparent,rgb(18, 40, 102));
     filter: blur(120px);
     background-attachment: fixed;
   }
   100% {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background:linear-gradient(transparent,rgb(18, 40, 102));
     background-attachment: fixed;
   }
 }
