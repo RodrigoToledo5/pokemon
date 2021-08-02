@@ -51,7 +51,7 @@
 }
 .Searchrbar__input{
   width: 75%;
-  padding: 9x;
+  padding: 9px;
   margin:7px 0;
   border:none;
   border-bottom: 3px solid rgb(190, 15, 15);
@@ -511,6 +511,63 @@
 .form input[type="submit"]:active{
   background:linear-gradient(to bottom,rgb(230, 35, 35),rgb(190, 15, 15));
 }
+
+@media screen and (max-width:600px){
+  .Navbar_cointainer{
+    display: flex;
+    flex-direction: row;
+    background-color:transparent;
+    flex-wrap: nowrap;
+    max-height: 30vh;
+    margin-top: 20px;
+    padding: 2vh;
+    margin-bottom: 90px;
+  }
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    background-color:transparent;
+    flex-wrap: wrap;
+    font-size: 12px;
+    max-height: 70px;
+    margin-bottom: 300px;
+  }
+  .flex-item{
+    font-size: 9px;
+  }
+  .ring{
+    font-size: 9px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    color:#000;
+  }
+  
+  .card_tobaltte{
+    padding-top: 50px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 8px;
+    color: #000;
+    height: 130px;
+    width: 120px;
+  }
+  
+  .card_tobaltte__player{
+    padding-top: 50px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 8px;
+    color: #000;
+    height: 130px;
+    width: 120px;
+  } 
+}
+
 
 
 

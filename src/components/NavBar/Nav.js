@@ -33,8 +33,8 @@ export default function Nav(){
                         <img className="img" src={fotopokemon.Pokemon.sprites.front_default} alt="pokemon">
                             </img>
                     </span>
-                    {fotopokemon.Pokemon.types.map((slot)=>(
-                        <span className="flex-item">Type: {slot.type.name[0].toUpperCase()}{slot.type.name.substring(1,slot.type.name.length)}
+                    {fotopokemon.Pokemon.types.map((slot,i)=>(
+                        <span key={i} className="flex-item">Type: {slot.type.name[0].toUpperCase()}{slot.type.name.substring(1,slot.type.name.length)}
                         </span>
                     ))} 
                 </div>
