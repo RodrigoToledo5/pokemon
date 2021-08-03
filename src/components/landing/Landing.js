@@ -29,7 +29,7 @@ export default function Landing(){
                         <div className={styles.flex__cointainer}>
                             <div className={styles.span}>{showtext()}</div>
                             <buttom className={styles.btn} onClick={(eve)=>handleClick(eve)}>GO</buttom>
-                            <img className={styles.img} alt="alt">
+                            <img className={styles.img} src="" alt="">
                             </img>
                         </div>
                     </div>  
