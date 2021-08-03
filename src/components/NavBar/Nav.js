@@ -46,10 +46,6 @@ export default function Nav(){
         <>
         <nav className="Navbar_cointainer"> 
             <div className="Navbar">
-                <NavLink className="btn" to="/">
-                        Home
-                </NavLink>
-
                 <NavLink className="btn" to="/Bag">
                         Bag
                 </NavLink>

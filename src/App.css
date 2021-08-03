@@ -2,6 +2,15 @@
   font-family: 'Press Start 2P','Fira Sans';
   font-weight: 50%;
 }
+.li{
+  list-style-type: none;
+  position: fixed;
+  left: 300px;
+  max-width: 400px;
+  max-height: 150px;
+  bottom: 0px;
+  margin-bottom: 35px;
+}
 
 .Navbar_cointainer {
   display: flex;
@@ -111,9 +120,11 @@
   }
 }
 .text_home_lorem{
+  padding-left: 50px;
+  padding-right: 50px;
   font-size: 1em;
-  font-family: Georgia;
-  text-align: center;
+  text-decoration: none;
+  text-align: justify;
   line-height: 1.5;
   color: #fff;
 }
@@ -122,6 +133,7 @@
   border-radius: 30px;
   background-color: white;
   height: 300px;
+  text-align: center;
   width: 200px;
   color:#000;
 }
@@ -131,6 +143,7 @@
   border-radius: 10px;
   background-color: white;
   font-size: 12px;
+  text-align: center;
   color: #000;
   height: 200px;
   width: 150px;
@@ -141,6 +154,7 @@
   border-radius: 10px;
   background-color: white;
   font-size: 12px;
+  text-align: center;
   color: #000;
   height: 200px;
   width: 150px;
@@ -333,6 +347,20 @@
   left: 50px;
   top: 40px;
   transform: scale(3);
+}
+
+.img_oak{
+  background-image: url("./components/prof.png");
+  background-size: cover;
+  width: 200px;
+  height:200px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  border:solid 1px white;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 @keyframes img {
@@ -611,7 +639,7 @@
     min-height: 100vh;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 15px;
+    margin-top: 50px;
   }
   
   .flex-item{
@@ -627,17 +655,23 @@
     text-align: center;
     border-radius: 1.5vh;
   }
+  .ring-cointainer{
+    display: flex;
+    border:none;
+    background-color:transparent;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
   .ring{
     font-size: 9px;
     padding: 2px;
     border-radius: 10px;
     background-color: white;
     height: 100px;
-    width: 10px;
+    width: 90px;
+    position: relative;
     color:#000;
-    margin-left: 1px;
-    margin-right: 1px;
-    flex: 2;
   }
   .img_tobattle{
     width: 10px;
@@ -650,6 +684,8 @@
   .card_tobaltte{
     padding-top: 20px;
     padding: 3px;
+    position: relative;
+    right: 80px;
     border-radius: 10px;
     background-color: white;
     font-size: 8px;
@@ -683,12 +719,66 @@
   .form-img{
     flex:1;
     display: flex;
-    max-width:200px;
+    max-width:100px;
     order:1;
   }
   .img-container{
-    margin-left: 15px;
+    margin-left: 40px;
+    margin-right: 25px;
     margin-top: 5px;
+  }
+  .form input[type="submit"]{
+    background-color:rgb(190, 15, 15);
+    border-bottom:none;
+    width: 100px;
+    padding: 15px;
+    cursor:pointer;
+  }
+  .form{
+    min-width:400px;
+    flex:1;
+    text-align: center;
+    font-size: 8px;
+    padding: 30px;
+    margin: 2px;
+    order:3;
+  }
+  .form textarea{
+    min-height: 150px;
+    width: 200px;
+    resize: none;
+  }
+  .text_home_lorem{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 0.5em;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  .img_oak{
+    background-image: url("./components/prof.png");
+    background-size: cover;
+    width: 100px;
+    height:100px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    border:solid 1px white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .li{
+    list-style-type: none;
+    position: fixed;
+    left: 130px;
+    max-width: 200px;
+    max-height: 150px;
+    bottom: 0px;
+    margin-bottom: 15px;
+    margin-right: 5px;
   }
 }
 
