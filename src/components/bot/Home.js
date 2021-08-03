@@ -29,7 +29,7 @@ export default function Bot({text1,text2,text3}){
                     <h3>
                         <li className="li">{showtext()}</li>
                     </h3>
-                    <img className={"img_oak"} src="" alt=""></img>   
+                    <div className={"img_oak"} ></div>   
                     <button className={styles.btn} onClick={()=>setbot(false)}>Cerrar</button>
                 </div>
             </div>
