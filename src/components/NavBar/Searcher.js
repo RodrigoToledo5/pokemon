@@ -1,6 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import  {capturePokemon,randomPokemon}  from '../../actions';
+import styles from './style.module.css'
+
 
 export function Searcher(){
     // const[input,setInput]=useState("");
@@ -33,7 +35,7 @@ export function Searcher(){
                 {/* <input name="pokemon" value={input} onChange={(eve)=>{handleChange(eve)}} className="Searchrbar__input" placeholder="Search"></input> */}
                 {/* <button onClick={()=>handleSumit(false)}>Search</button> */}
                 {/* <button onClick={()=>dispatch(getPokemon(''))}>Clear</button> */}
-                <button className="btn__random" onClick={()=>giveRandom(true)}></button>
+                <button className={styles.btn__adventure} onClick={()=>giveRandom(true)}></button>
             </div>
         </>
     )

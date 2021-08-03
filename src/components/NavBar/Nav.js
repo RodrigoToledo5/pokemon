@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import {Searcher} from './Searcher';
 import { useDispatch, useSelector } from 'react-redux';
 import  {capturePokemon, takePokemon}  from '../../actions';
+import styles from './style.module.css'
 
 export default function Nav(){
     const fotopokemon = useSelector((store) => store.pokemonSearch);
@@ -46,16 +47,13 @@ export default function Nav(){
         <>
         <nav className="Navbar_cointainer"> 
             <div className="Navbar">
-                <NavLink className="btn" to="/Bag">
-                        Bag
+                <NavLink className={styles.btn__bag} to="/Bag">
                 </NavLink>
 
-                <NavLink className="btn" to="/Battle">
-                        Battle
+                <NavLink className={styles.btn__battle} to="/Battle">
                 </NavLink>
 
-                <NavLink className="btn" to="/Contact">
-                        Contact
+                <NavLink className={styles.btn__contact} to="/Contact">
                 </NavLink>
 
                 <Searcher/>

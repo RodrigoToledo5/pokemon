@@ -1,0 +1,80 @@
+
+.btn__bag{
+    background-image: url('./backpack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+.btn__bag:hover{
+    filter: brightness(150%);
+}
+.btn__bag:active{
+    filter: grayscale(50%);
+}
+.btn__battle{
+    background-image: url('./battle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+.btn__battle:hover{
+    filter: brightness(150%);
+}
+.btn__battle:active{
+    filter: grayscale(50%);
+}
+
+.btn__battle{
+    background-image: url('./battle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+.btn__battle:hover{
+    filter: brightness(150%);
+}
+.btn__battle:active{
+    filter: grayscale(50%);
+}
+.btn__contact{
+    background-image: url('./contact.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border:none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+.btn__contact:hover{
+    filter: brightness(150%);
+}
+.btn__contact:active{
+    filter: grayscale(50%);
+}
+
+.btn__adventure{
+    background-image: url('./compass.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border:none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+.btn__adventure:hover{
+    filter: brightness(150%);
+}
+.btn__adventure:active{
+    filter: grayscale(50%);
+}
+
+@media screen and (max-width:500px){
+}

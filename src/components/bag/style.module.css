@@ -1,0 +1,297 @@
+.card{
+  background-color: rgb(240, 235, 235);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 1px red;
+}
+.normal{
+  background:linear-gradient(to left,rgb(112, 80, 39),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.fighting{
+  background:linear-gradient(to left,rgb(114, 39, 4),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+.flying{
+  background:linear-gradient(to left,rgb(194, 243, 247),rgb(255, 255, 255));
+  padding: 15px;
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+.flying{
+  background:linear-gradient(to left,rgb(194, 243, 247),rgb(255, 255, 255));
+  padding: 15px;
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+.poison{
+  background:linear-gradient(to left,rgba(218, 240, 16, 0.897),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.ground{
+  background:linear-gradient(to left,rgba(139, 41, 2, 0.897),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.rock{
+  background:linear-gradient(to left,rgba(66, 63, 61, 0.897),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+.bug{
+  background:linear-gradient(to left,rgba(173, 133, 106, 0.897),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+.ghost{
+  background:linear-gradient(to left,rgba(153, 63, 212, 0.897),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.steel{
+  background:linear-gradient(to left,rgba(34, 34, 34, 0.897),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.fire{
+  background:linear-gradient(to left,rgb(240, 0, 0),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.water{
+  background:linear-gradient(to left,rgb(26, 40, 240),rgb(255, 255, 255));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.grass{
+  background:linear-gradient(to left,rgb(19, 221, 1),transparent);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+.electric{
+  background:linear-gradient(to left,rgb(255, 215, 35),transparent);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.psychic{
+  background:linear-gradient(to left,rgb(204, 130, 253),transparent);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.ice{
+  background:linear-gradient(to left,rgb(0, 168, 160),transparent);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.dragon{
+  background:linear-gradient(to left,rgb(92, 4, 4),transparent);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.dark{
+  background:linear-gradient(to left,rgb(2, 0, 0),transparent);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.fairy{
+  background:linear-gradient(to left,rgb(248, 150, 150),transparent);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.unknown{
+  background:linear-gradient(to left,rgb(36, 30, 66),transparent);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.shadow{
+  background:linear-gradient(to left,rgb(137, 3, 190),transparent);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(0, 0, 0);
+}
+
+.card__selected{
+  background:linear-gradient(to top,rgb(251, 255, 0),rgb(213, 250, 2));
+  padding: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  text-align: center;
+  margin:10px;
+  height: 170px;
+  border-radius: 1vh;
+  cursor:pointer;
+  border:solid 4px rgb(255, 255, 255);
+}
+
+@media screen and (max-width:500px){
+  
+}

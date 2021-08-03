@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import  {pickPokemon}  from '../../actions';
 import Bot from '../bot/Home';
+import styles from './style.module.css'
 
 
 export default function Bag(){
@@ -35,13 +36,18 @@ function showimg(poke){
 function showalter(poke){
     if(poke.sprites.front_default)return(poke.sprites.front_default)
 }
+
+function colorbytype(types){
+    console.log(types[0])
+    if(types[0].type.name)return styles[types[0].type.name]
+}
     return(
         <>
         <div className="flex-cointainer__card">
             {state&&state.bag.map((pokemon,i)=>{
                 return(
                 <> 
-                    <span onClick={()=>handleSelect(pokemon.id)} key={i} className={pokemon.is_default?"flex-item__card":"flex-item__card_selected"}>
+                    <span onClick={()=>handleSelect(pokemon.id)} key={i} className={pokemon.is_default?colorbytype(pokemon.types):styles.card__selected}>
                         <span key={i}>{pokemon.name[0].toUpperCase()}{pokemon.name.substring(1,pokemon.name.length)}
                         </span>
                         <div><img key={i} className="img_card" src={checkimg(pokemon)?showimg(pokemon):showalter(pokemon)} alt="pokemon"/>
