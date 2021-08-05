@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 //import IMG from"./mail.png"
-import IMG from './mail.png'
 import { useDispatch } from 'react-redux';
 import  {actualizarchat}  from '../../actions';
+import styles from './style.module.css'
 import Bot from '../bot/Home';
 
 export default function Contact(){
@@ -24,28 +24,19 @@ export default function Contact(){
     return(
         <>
             
-            <div className="body">
+            <div className={styles.container}>
 
-                <div className="flex-container">
+                <div className={styles.flex__item}>
+                    <form onSubmit={(eve)=>send_msj(eve)} className={styles.form}>
+                         <h3 className={styles.txt}>  Escribenos por telegram</h3>
 
-               
-                    <form className="form" onSubmit={(eve)=>send_msj(eve)}>
-                         <h3>  Escribenos por telegram</h3>
-                        <div className="form_section">
-                            <textarea value={msj} className="form__input" type="text" placeholder="msj" onChange={(eve)=>setmsj(eve)}/>
+                        <div className={styles.form} >
+                            <textarea value={msj} className={styles.text} type="text" placeholder="msj" onChange={(eve)=>setmsj(eve)}/>
                         </div>
-                        <div className="form__section">
-                            <input type="submit" className="form__input" />
+                        <div>
+                            <input type="submit"  className={styles.btn}/>
                         </div>
-                        
                     </form>
-                    <div className="form-img"> 
-                            <div className="img-container">
-                                <div>
-                                    <img src={IMG} alt="pokemon"/>
-                                </div>
-                            </div>
-                        </div>
                 </div>
             </div>
             <Bot text1={text1} text2={text2} text3={text3}></Bot>

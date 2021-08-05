@@ -40,6 +40,16 @@
 }
 
 @media screen and (max-width:500px){
+    .textcontainer{
+        margin:5px;
+        border-radius: 5px;
+        background:linear-gradient(to top,rgb(15, 15, 15),transparent);
+        width: 800px;
+        height: 100px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
     .btn_phone{
         background-image: url('./pokephone.png');
         background-repeat: no-repeat;
@@ -60,7 +70,7 @@
         font-size: 7px;
         position: relative;
         left: 0;
-        top: 125px;
+        bottom: 25px;
         border: black 1px;
         cursor: pointer;
         border-radius: 3px;
