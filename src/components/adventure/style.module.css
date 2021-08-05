@@ -1,0 +1,106 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex_night{
+    background-image: url('./night.gif');
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+}
+.container_camp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.flex_camp{
+    background-color: aliceblue;
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.img{
+
+    transform: scale(150%);
+}
+.container_btn{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.btn_next{
+    background-image: url('./Run.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 10px;
+    color: rgb(252, 249, 249);
+    margin: 10px;
+    height: 80px;
+    width: 100px;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.btn_next:hover{
+    filter: brightness(150%);
+}
+.btn_next:active{
+    filter: brightness(50%);
+} 
+
+.btn_capture{
+    background-image: url('./capture.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 10px;
+    color: black;
+    margin: 10px;
+    height: 80px;
+    width: 100px;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+.btn_capture:hover{
+    filter: brightness(150%);
+}
+.btn_capture:active{
+    filter: brightness(50%);
+}
+
+.btn_txt{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:500px){
+    .flex_night{
+        background-image: url('./night.gif');
+        background-repeat: no-repeat;
+        background-position-y: -120px;
+        background-size: cover;
+        height: 600px;
+        width: 900px;
+        border-radius: 5px;
+    }
+    .flex_camp{
+        background-color: aliceblue;
+        height: 100px;
+        width: 300px;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

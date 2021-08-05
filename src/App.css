@@ -15,9 +15,10 @@
 .Navbar_cointainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   background-color:transparent;
   flex-wrap: nowrap;
-  max-height: 30vh;
+  max-height: 10vh;
   margin-top: 10px;
   padding: 2vh;
   margin-bottom: 10px;
@@ -613,10 +614,9 @@
     flex-direction: row;
     background-color:transparent;
     flex-wrap: nowrap;
-    max-height: 30vh;
+    max-height: 5vh;
     margin-top: 20px;
     padding: 2vh;
-    margin-bottom: 170px;
   }
   .Navbar {
     display: flex;
@@ -625,7 +625,6 @@
     flex-wrap: wrap;
     font-size: 12px;
     max-height: 70px;
-    margin-bottom: 1000px;
   }
 
   .flex-cointainer__card{

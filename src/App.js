@@ -5,6 +5,7 @@ import Nav from './components/NavBar/Nav';
 import Contact from './components/contact/Contact';
 import Battle from './components/battle/Battle';
 import Landing from './components/landing/Landing';
+import Adventure from './components/adventure/adventure';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <div className="body">
         <Route path="/Bag" component={Nav}/>
         <Route path="/Bag" component={Bag}/>
+        <Route path="/Adventure" component={Nav}/>
+        <Route path="/Adventure" component={Adventure}/>
         <Route path="/Battle" component={Nav}/>
         <Route path="/Battle" component={Battle}/>
         <Route path="/Contact" component={Nav}/>

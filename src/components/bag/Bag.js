@@ -6,9 +6,9 @@ import styles from './style.module.css'
 
 
 export default function Bag(){
-    const text1=`Para comenzar has click en el boton "?" para obtener un pokémon y luego click en la pokéball para capturarlo.`;
-    const text2="Para seleccionar un pokemon has click en uno";
-    const text3="Para luchar contra Pokémons randoms y pickea y ve battle";
+    const text1=`Para comenzar tu aventura has click en la brujula y luego click en la pokéball para capturar el pokemon que aparezca.`;
+    const text2="Para seleccionar un pokemon primero tendras que tener capturado uno";
+    const text3="Una vez capturado uno podras seleccionarlo para luchar";
     const state = useSelector(store => store.scoreTable)
     const dispatch = useDispatch()
     function handleSelect(id){
