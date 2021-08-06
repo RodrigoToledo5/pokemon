@@ -30,9 +30,39 @@
     margin-bottom: 10px;
 }
 .img{
-
-    transform: scale(150%);
+    width: 15vh;
+    height: 15vh;
 }
+
+.img_captured{
+    /* background-image: url('./bright.gif'); */
+    background-position-x:-10px ;
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    animation-name:desaparece;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+}
+
+@keyframes desaparece{
+    0% {
+        transform:translate(0px,0px) ;
+        filter:blur(2px);
+    }
+    70%{
+        transform:skew(10deg,40deg);
+        filter:blur(3px)
+    }
+    100%{
+        transform:scale(0)
+    }
+  }
 .container_btn{
     display: flex;
     flex-direction: row-reverse;
@@ -84,6 +114,61 @@
     padding: 10px;
     margin-top: 10px;
 }
+.pokeball{
+    background-color: transparent;
+    position: absolute;
+    left: auto;
+    top: auto;
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    animation-name:capture;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+}
+
+@keyframes capture{
+    0% {transform:translate(170px,400px)}
+    50%{
+        transform:rotate(500deg);
+        background-color: transparent;
+        filter:brightness(100%) blur(0px);
+        border-radius: 50%;
+    }
+    65%{
+        transform:translate(45%,100px) scale(250%)rotate(1300deg);
+        background-color: rgb(250, 250, 250);
+        filter: brightness(150%) blur(20px);
+        border:none;
+    }
+    75%{
+        transform:translate(45%,100px) scale(250%);
+        background-color: yellow;
+        filter: brightness(150%) blur(20px);
+        border:solid 10px  red;
+        border-radius: 0%;
+    }
+    80%{
+        transform:translate(45%,100px) scale(250%);
+        background-color: rgb(255, 0, 0);
+        border:solid 10px  rgb(255, 255, 255);
+        filter: brightness(150%) blur(20px);
+    }
+    85%{
+        transform:translate(-90%,-90px);
+        background-color: transparent;
+        filter: brightness(100%) blur(0px);
+        border:none;
+        border-radius: 50%;
+    }
+    100%{transform:scale(0)}
+  }
+
 
 @media screen and (max-width:500px){
     .flex_night{
@@ -104,4 +189,58 @@
         margin-top: 5px;
         margin-bottom: 10px;
     }
+    .pokeball{
+        background-color: transparent;
+        position: absolute;
+        left: auto;
+        top: auto;
+        width: 100px;
+        height: 100px;
+        transition: 1s;
+        transition-property: all;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+        animation-name:capture;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        border-radius: 50%;
+    }
+    
+    @keyframes capture{
+        0% {transform:translate(80px,420px)}
+        50%{
+            transform:rotate(500deg);
+            background-color: transparent;
+            filter:brightness(100%) blur(0px);
+            border-radius: 50%;
+        }
+        65%{
+            transform:translate(45%,100px) scale(250%)rotate(1300deg);
+            background-color: rgb(250, 250, 250);
+            filter: brightness(150%) blur(20px);
+            border:none;
+        }
+        75%{
+            transform:translate(45%,100px) scale(250%);
+            background-color: yellow;
+            filter: brightness(150%) blur(20px);
+            border:solid 10px  red;
+            border-radius: 0%;
+        }
+        80%{
+            transform:translate(45%,100px) scale(250%);
+            background-color: rgb(255, 0, 0);
+            border:solid 10px  rgb(255, 255, 255);
+            filter: brightness(150%) blur(20px);
+        }
+        85%{
+            transform:translate(-90%,-120px);
+            background-color: transparent;
+            filter: brightness(100%) blur(0px);
+            border:none;
+            border-radius: 50%;
+        }
+        100%{transform:scale(0)}
+      }
 }

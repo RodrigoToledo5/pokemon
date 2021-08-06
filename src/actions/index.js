@@ -3,6 +3,15 @@ export const GET_COUNTRIES='GET_COUNTRIES';
 export const RANDOM_POKEMON='RANDOM_POKEMON';
 export const CAPTURE_POKEMON='CAPTURE_POKEMON';
 export const SEND_MSJ='SEND_MSJ';
+export const SET_CAPTURED='SET_CAPTURED';
+
+
+export const setCapture=(iscaptured)=>(dispatch)=>{
+    dispatch({
+        type: 'SET_CAPTURED',
+        payload:iscaptured
+    })
+}
 
 export const getPokemon =(pokemon_name)=>(dispatch)=> { 
     fetch("http://localhost:3001/Countries?offset=0")
