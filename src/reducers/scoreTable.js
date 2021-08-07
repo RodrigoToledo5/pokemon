@@ -91,7 +91,7 @@ export default function scoreTable(state=inicialState,action){
                             pick:{},
                             bag:state.bag.filter(pokemon=>pokemon.id!==state.pick.id),
                             score:state.score-10,
-                            msj:"Golpeaste primero tu oponente te ha derrotado, tu pokemon ha muerto los siento :("
+                            msj:"Golpeaste primero, tu oponente te ha derrotado y tu pokemon ha muerto los siento :("
                     
                         }
                     }
@@ -106,7 +106,7 @@ export default function scoreTable(state=inicialState,action){
                             pick:{},
                             bag:state.bag.filter(pokemon=>pokemon.id!==state.pick.id),
                             score:state.score-10,
-                            msj:"El oponente atacó primero tu oponente te ha derrotado, tu pokemon ha muerto los siento :("
+                            msj:"El oponente atacó primero, tu oponente te ha derrotado y tu pokemon ha muerto los siento :("
                         }
                     }
                     state.oponent.stats[0].base_stat=state.oponent.stats[0].base_stat-state.pick.stats[1].base_stat;
@@ -116,7 +116,7 @@ export default function scoreTable(state=inicialState,action){
                             ...state,
                             oponent:{},
                             score:state.score+15,
-                            msj:"El oponente atacó primero oponente derrotado"
+                            msj:"El oponente atacó primero, oponente derrotado"
                         }
                     }
                 }

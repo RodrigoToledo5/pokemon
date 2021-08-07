@@ -1,9 +1,10 @@
 .container{
   display: flex;
-  min-height: 100vh;
+
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .ring{
@@ -25,6 +26,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items:center;
+ 
   padding: 20px;
 }
 .playerzone{
@@ -153,9 +155,9 @@
       background-size: cover;
       height: 600px;
       width: 300px;
+      margin: 0px;
       border-radius: 10px;
     }
-    
     .playerzone{
       display: flex;
       flex-direction: row-reverse;
@@ -167,6 +169,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items:center;
+      width: 300px;
       padding: 0px;
     }
     .enemyzone{
@@ -181,6 +184,8 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
+      margin-bottom: 20px;
+      padding: 5px;
     }
     .container_text{
       display: flex;
@@ -195,6 +200,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      min-width: 80px;
+      min-height: 100px;
       font-size: 10px;
       padding: 5px;
     }
