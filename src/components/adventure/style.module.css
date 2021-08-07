@@ -4,6 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 80px;
+    
 }
 .flex_night{
     background-image: url('./night.gif');
@@ -21,6 +22,7 @@
     align-items: center;
     height: 100%;
 }
+
 .flex_camp{
     background-color: aliceblue;
     height: 100px;
@@ -30,15 +32,27 @@
     margin-bottom: 10px;
 }
 .img{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 15vh;
     height: 15vh;
+}
+
+.pokemon_container{
+    filter: contrast(20);
 }
 
 .img_captured{
     /* background-image: url('./bright.gif'); */
     background-position-x:-10px ;
-    width: 100px;
-    height: 70px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 15vh;
+    height: 15vh;
     background-size: cover;
     background-repeat: no-repeat;
     transition-duration: 4s;
@@ -133,7 +147,7 @@
 }
 
 @keyframes capture{
-    0% {transform:translate(170px,400px)}
+    0% {transform:translate(120px,300px)}
     50%{
         transform:rotate(500deg);
         background-color: transparent;
@@ -160,7 +174,7 @@
         filter: brightness(150%) blur(20px);
     }
     85%{
-        transform:translate(-90%,-90px);
+        transform:translate(-90%,-100px);
         background-color: transparent;
         filter: brightness(100%) blur(0px);
         border:none;

@@ -38,7 +38,6 @@ function showalter(poke){
 }
 
 function colorbytype(types){
-    console.log(types[0])
     if(types[0].type.name)return styles[types[0].type.name]
 }
     return(
@@ -47,10 +46,11 @@ function colorbytype(types){
             {state&&state.bag.map((pokemon,i)=>{
                 return(
                 <> 
-                    <span onClick={()=>handleSelect(pokemon.id)} key={i} className={pokemon.is_default?colorbytype(pokemon.types):styles.card__selected}>
+                    <span onClick={()=>handleSelect(pokemon.id)} key={i+2000} className={pokemon.is_default?colorbytype(pokemon.types):styles.card__selected}>
                         <span key={i}>{pokemon.name[0].toUpperCase()}{pokemon.name.substring(1,pokemon.name.length)}
                         </span>
-                        <div><img key={i} className="img_card" src={checkimg(pokemon)?showimg(pokemon):showalter(pokemon)} alt="pokemon"/>
+                        <div key={i+3000}>
+                            <img key={i+4000} className="img_card" src={checkimg(pokemon)?showimg(pokemon):showalter(pokemon)} alt="pokemon"/>
                         {i}
                         </div>
                         {pokemon.stats.map((stat,i)=>{

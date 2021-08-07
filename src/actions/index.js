@@ -3,13 +3,13 @@ export const GET_COUNTRIES='GET_COUNTRIES';
 export const RANDOM_POKEMON='RANDOM_POKEMON';
 export const CAPTURE_POKEMON='CAPTURE_POKEMON';
 export const SEND_MSJ='SEND_MSJ';
-export const SET_CAPTURED='SET_CAPTURED';
+export const CLEAR_POKEMON='CLEAR_POKEMON';
 
 
-export const setCapture=(iscaptured)=>(dispatch)=>{
+export const clearPokemon=()=>(dispatch)=>{
     dispatch({
-        type: 'SET_CAPTURED',
-        payload:iscaptured
+        type: 'CLEAR_POKEMON',
+        payload:null
     })
 }
 
@@ -66,7 +66,6 @@ export const letFigth =(bolean)=>(dispatch)=> {
 }
 
 export const letHit =(bolean)=>(dispatch)=> { 
-    // console.log(bolean)
       dispatch ({type:"HIT", payload:bolean})
 }
 

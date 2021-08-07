@@ -11,7 +11,7 @@ export default function Adventure(){
     const text3="Para ver tus pokemons caputrados ve a tu mochila";
     const [animation, setAnimation] = useState(false)
     
-    const pokemon = useSelector((store) => store.pokemonSearch.Pokemon);
+    const pokemon = useSelector((store) => store.pokemonSearch.pokemon);
     const captured = useSelector((store) => store.pokemonSearch.Capture);
     const dispatch = useDispatch();
     function randomid(){
@@ -28,6 +28,7 @@ export default function Adventure(){
         setAnimation(true)
         dispatch(takePokemon(pokemon))
         dispatch(capturePokemon(true))
+        
     }
     function checkimg(poke){
         if(poke.sprites.versions["generation-v"]["black-white"].animated.front_default!==null) return true;
@@ -66,6 +67,22 @@ export default function Adventure(){
             </>
         )
    }
+
+   function showPokeballAnimation(){
+       
+       return(
+            <>
+                
+                    <img src={animation&&pokeball} className={animation&&styles.pokeball} alt=""></img>
+               
+            </>
+       )
+   }
+
+   function arandomPokemonApears(){
+       if(pokemon.hasOwnProperty('name')) return true
+       else return false
+   }
     
     return(
         <>
@@ -74,9 +91,10 @@ export default function Adventure(){
                     <div className={styles.container_camp}>
                         <div className={styles.container_btn} >
                         </div>
-
-                        {captured?pokemon&&ShowAnimationCaptured():pokemon?ShowNormalPokemon():null}
-                        {animation&&<img src={animation&&pokeball} className={animation&&styles.pokeball} alt=""></img>}
+                        {captured?arandomPokemonApears()&&ShowAnimationCaptured():arandomPokemonApears()&&ShowNormalPokemon()}
+                        
+                            {animation&&showPokeballAnimation()}
+                        
                         <div className={styles.flex_camp}>
                             <div className={styles.container_btn} >
                                 <div className={styles.btn_capture} onClick={()=>onClickCapture()}>

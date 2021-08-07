@@ -63,32 +63,35 @@ export default function scoreTable(state=inicialState,action){
         };
         case "HIT":
              
-            // var damage=0;
             if(state.oponent.stats){
                 if(!state.pick.stats){
-                    alert("Pickea un pókemon primero :D")
-                    return state
+                    return {
+                        ...state,
+                        msj:"Pickea un pokemon primero"
+                    }
                 }
                 if(state.oponent.stats[5].base_stat<state.pick.stats[5].base_stat){
                     state.msj="Golpeaste primero";
                     state.oponent.stats[0].base_stat=state.oponent.stats[0].base_stat-state.pick.stats[1].base_stat;
     
                     if(state.oponent.stats[0].base_stat<=0){ 
-                        alert("Oponente derrotado")
+                        
                         return {
                             ...state,
                             oponent:{},
-                            score:state.score+15
+                            score:state.score+15,
+                            msj:"Golpeaste primero oponente derrotado"
                         }
                     }
                     state.pick.stats[0].base_stat=state.pick.stats[0].base_stat-state.oponent.stats[1].base_stat;
                     if(state.pick.stats[0].base_stat<=0){ 
-                        alert("Tu oponente te ha derrotado, tu pokemon ha muerto los siento :(")
+                        
                         return {
                             ...state,
                             pick:{},
                             bag:state.bag.filter(pokemon=>pokemon.id!==state.pick.id),
-                            score:state.score-10
+                            score:state.score-10,
+                            msj:"Golpeaste primero tu oponente te ha derrotado, tu pokemon ha muerto los siento :("
                     
                         }
                     }
@@ -97,21 +100,23 @@ export default function scoreTable(state=inicialState,action){
                     state.msj="El oponente atacó primero";
                     state.pick.stats[0].base_stat=state.pick.stats[0].base_stat-state.oponent.stats[1].base_stat;
                     if(state.pick.stats[0].base_stat<=0){
-                        alert("Tu oponente te ha derrotado, tu pokemon ha muerto los siento :(")
+                        
                         return {
                             ...state,
                             pick:{},
                             bag:state.bag.filter(pokemon=>pokemon.id!==state.pick.id),
                             score:state.score-10,
+                            msj:"El oponente atacó primero tu oponente te ha derrotado, tu pokemon ha muerto los siento :("
                         }
                     }
                     state.oponent.stats[0].base_stat=state.oponent.stats[0].base_stat-state.pick.stats[1].base_stat;
                     if(state.oponent.stats[0].base_stat<=0){ 
-                    alert("Oponente derrotado")
+ 
                         return {
                             ...state,
                             oponent:{},
-                            score:state.score+15
+                            score:state.score+15,
+                            msj:"El oponente atacó primero oponente derrotado"
                         }
                     }
                 }

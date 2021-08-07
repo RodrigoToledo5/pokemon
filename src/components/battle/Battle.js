@@ -17,11 +17,14 @@ export default function Battle(){
         let min=0;
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
+    function handleClick(){
+        dispatch(letHit(true))
+    }
 
     function giveRandom(){
         dispatch(randomEnemy(handleRandomid()))
         dispatch(letFigth(true))
-        setTimeout(dispatch(letHit(true)),500)
+        dispatch(letHit(true))
     }
     function renderPick(torender){
         if(torender.sprites){
@@ -67,46 +70,67 @@ export default function Battle(){
 
     function renderNext(){
         return(
-            <button className="btn_fgt" onClick={giveRandom} >Next Round</button>
+            <button className={styles.btn_battle} onClick={giveRandom} ></button>
         )
     }
 
     function renderReady(){
         return(
-            <button className="btn_fgt" onClick={()=>setTimeout(dispatch(letHit(true)),500)} >Im ready</button>
+            <button className={styles.btn_imready} onClick={handleClick} ></button>
         )
     }
+
     return(
         <>
-            <div className="flex-cointaine_home" >
-                <h1 className="text_home">Prepare to battle</h1>
-                
-                    <div className="btn__cointainer">
-                        <div className="ready-btn">
-                                    {renderBtn()}
+            <div className={styles.container} >
+                <div className ={styles.ring}>
+                    <div className={styles.btn}>{renderBtn()}</div>
+                        
+                    <div className={styles.battle}>   
+                       
+                        <div className={styles.container_picks}>
+                        <div className={styles.enemyzone}>
+                            <div className={styles.enemy}>
+                                <div className={styles.container_pokemon}>
+                                    {renderEnemy(state.oponent)}
+                                </div>
+                            </div>
+                            <div className={styles.container_stats}>
+                            <div>{state.oponent.name&&state.oponent.name[0].toUpperCase()+state.oponent.name.substring(1,state.oponent.name.length)}</div>
+                            <div>HP:{state.oponent.stats?state.oponent.stats[0].base_stat:"0"}</div>
+                            <div>ATK:{state.oponent.stats?state.oponent.stats[1].base_stat:"0"}</div>
+                            </div> 
+                        </div>
+
+
+                        <div className={styles.playerzone}>
+                            <div className={styles.container_stats}>
+
+                            <div>{state.pick.name&&state.pick.name[0].toUpperCase()+state.pick.name.substring(1,state.pick.name.length)}</div>
+                            <div>HP:{state.pick.stats?state.pick.stats[0].base_stat:"0"}</div>
+                            <div>ATK:{state.pick.stats?state.pick.stats[1].base_stat:"0"}</div>
+
+                            </div> 
+                            <div className={styles.pick} >
+                                <div className={styles.container_pokemon}>{renderPick(state.pick)}</div>
+                            </div>
+                            
+                        </div>
+
                         </div>
                     </div>
-                    <div className={styles.ring_container}>
-                                <div className={styles.card_player}>
-                                    <div className="img_tobattle">{renderPick(state.pick)}</div>
-                                    <span>{state.pick.name&&state.pick.name[0].toUpperCase()+state.pick.name.substring(1,state.pick.name.length)}</span>
-                                    <div>HP:{state.pick.stats?state.pick.stats[0].base_stat:"0"}</div>
-                                    <div>ATK:{state.pick.stats?state.pick.stats[1].base_stat:"0"}</div>
-                                </div>
-                                
-                                
-                                <div className="ring">
-                                    <div>{state.msj}</div>
-                                    <div>Score:{state.score}</div>
-                                </div>
-                                <div className={styles.card_enemy}>
-                                    <div className="img_tobattle">{renderEnemy(state.oponent)}</div>
-                                    <span>{state.oponent.name&&state.oponent.name[0].toUpperCase()+state.oponent.name.substring(1,state.oponent.name.length)}</span>
-                                    <div>HP:{state.oponent.stats?state.oponent.stats[0].base_stat:"0"}</div>
-                                    <div>ATK:{state.oponent.stats?state.oponent.stats[1].base_stat:"0"}</div>
-                                </div>
+                    
+                    
+                    <div className={styles.bar}>
+                        <div className={styles.container_menu}>
+                            <div className={styles.container_text}>
+                                <div>{state.msj}</div>
+                                <div>Score:{state.score}</div>
+                            </div>
+                        </div>      
                     </div>
-               
+
+                </div>
             </div>
             <Bot text1={text1} text2={text2} text3={text3}></Bot>
         </>
