@@ -4,9 +4,7 @@ import styles from './style.module.css'
 import ReactTypingEffect from 'react-typing-effect'
 
 export default function Landing(){
-    const text1="Hola mi nombre es el Profe Ahok, este es un mini juego de Pokémon.";
-    const text2="Aquí podrás capturar pokémones con estadisticas randoms y luego luchar con ellos.";
-    const text3="Deseas comenzar?"
+    const text1="Hola mi nombre es el Profe Ahok, éste es un mini juego de Pokémon. Aquí podrás capturar pokémones con estadisticas randoms y luego luchar con ellos. Deseas comenzar?";
     let history = useHistory();
     function handleClick(){
         history.push("/Bag")
@@ -15,7 +13,7 @@ export default function Landing(){
         return (
             <>
               <ReactTypingEffect
-                text={[text1,text2,text3]} speed={25} eraseSpeed={5} cursor={" "}
+                text={[text1]} speed={20} eraseSpeed={5} cursor={" "}
               />
             </>
           );
