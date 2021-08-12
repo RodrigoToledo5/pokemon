@@ -38,8 +38,25 @@
     margin-right: 20px;
     width: 15vh;
     height: 15vh;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    animation-name:aparece;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-
+@keyframes aparece{
+    0% {
+        transform:scale(0); ;
+        filter:blur(10px);
+    }
+    70%{
+        filter:blur(10px)
+    }
+    100%{
+        transform:scale(1);
+    }
+}
 .pokemon_container{
     filter: contrast(20);
 }

@@ -10,7 +10,6 @@ export default function Adventure(){
     const text2="Para continuar con tu aventura y buscar otro pokemon seleecciona siguiente";
     const text3="Para ver tus pokemons caputrados ve a tu mochila";
     const [animation, setAnimation] = useState(false)
-    
     const pokemon = useSelector((store) => store.pokemonSearch.pokemon);
     const captured = useSelector((store) => store.pokemonSearch.Capture);
     const dispatch = useDispatch();
@@ -49,6 +48,7 @@ export default function Adventure(){
     
     useEffect(() => {
         dispatch(randomPokemon(randomid()));
+        // return (dispatch(clearPokemon()));
         
     },[dispatch])
 
