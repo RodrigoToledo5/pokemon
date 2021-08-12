@@ -9,7 +9,7 @@ export default function Bag(){
     const text1=`Para comenzar tu aventura has click en la brujula y luego click en la pokéball para capturar el pokemon que aparezca.`;
     const text2="Para seleccionar un pokemon primero tendras que tener capturado uno";
     const text3="Una vez capturado uno podras seleccionarlo para luchar";
-    const state = useSelector(store => store.scoreTable)
+    const state = useSelector(store => store.scoreTable);
     const dispatch = useDispatch()
     function handleSelect(id){
     dispatch(pickPokemon(id))
@@ -43,15 +43,15 @@ function colorbytype(types){
     return(
         <>
         <div className="flex-cointainer__card">
-            {state&&state.bag.map((pokemon,i)=>{
+            {state&&state.bag.map((pokemon,j)=>{
                 return(
                 <> 
-                    <span onClick={()=>handleSelect(pokemon.id)} key={i+2000} className={pokemon.is_default?colorbytype(pokemon.types):styles.card__selected}>
-                        <span key={i}>{pokemon.name[0].toUpperCase()}{pokemon.name.substring(1,pokemon.name.length)}
+                    <span onClick={()=>handleSelect(pokemon.id)} key={j+2000} className={pokemon.is_default?colorbytype(pokemon.types):styles.card__selected}>
+                        <span key={j}>{pokemon.name[0].toUpperCase()}{pokemon.name.substring(1,pokemon.name.length)}
                         </span>
-                        <div key={i+3000}>
-                            <img key={i+4000} className="img_card" src={checkimg(pokemon)?showimg(pokemon):showalter(pokemon)} alt="pokemon"/>
-                        {i}
+                        <div key={j+3000}>
+                            <img key={j+4000} className="img_card" src={checkimg(pokemon)?showimg(pokemon):showalter(pokemon)} alt="pokemon"/>
+                        {j}
                         </div>
                         {pokemon.stats.map((stat,i)=>{
                             return(
