@@ -28,7 +28,7 @@ export default function Contact(){
 
                 <div className={styles.flex__item}>
                     <form onSubmit={(eve)=>send_msj(eve)} className={styles.form}>
-                         <h3 className={styles.txt}>  Escribenos por telegram</h3>
+                         <h3 className={styles.txt}>  Momentaneamente desabilitamos los msj por telegram proximamente agregaremos mejoras</h3>
 
                         <div className={styles.form} >
                             <textarea value={msj} className={styles.text} type="text" placeholder="msj" onChange={(eve)=>setmsj(eve)}/>
