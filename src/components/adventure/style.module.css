@@ -6,15 +6,318 @@
     margin-bottom: 80px;
     
 }
-.flex_night{
-    background-image: url('./night.gif');
+
+.normal{
+    background-image: url('./normal.gif');
     background-repeat: no-repeat;
     background-position-y: -110px;
     background-size: cover;
     height: 500px;
     width: 900px;
     border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .fighting{
+    background-image: url('./fighting.gif');
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .flying{
+    background-image: url('./flying.gif');
+    background-repeat: no-repeat;
+    background-position-y: -1100px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .poison{
+    background-image: url('./poison.gif');
+    background-repeat: no-repeat;
+    background-position-y: -500px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .ground{
+    background-image: url('./ground.gif');
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+.rock{
+    background-image: url('./rock.gif');
+    background-repeat: no-repeat;
+    background-position-y: -450px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+.bug{
+    background-image: url('./bug.gif');
+    background-repeat: no-repeat;
+    background-position-y: -850px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+  }
+.ghost{
+    background-image: url('./ghost.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -350px;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+  
+.steel{
+    background-image: url('./steel.jpg');
+    background-repeat: no-repeat;
+    background-position-y: -190px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+.fire{
+    background-image: url('./fire.gif');
+    background-repeat: no-repeat;
+    background-position-y: -500px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+  
+.water{
+    background-image: url('./water.gif');
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+.grass{
+    background-image: url('./grass.gif');
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.electric{
+    background-image: url('./lightning.gif');
+    background-repeat: no-repeat;
+    background-position-y: -500px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+.psychic{
+    background-image: url('./psychic.gif');
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+.ice{
+    background-image: url('./ice.gif');
+    background-repeat: no-repeat;
+    background-position-y: -155px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+.dragon{
+    background-image: url('./dragon.gif');
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} 
+  
+.dark{
+    background-image: url('./dark.gif');
+    background-repeat: no-repeat;
+    background-position-y: -450px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+.fairy{
+    background-image: url('./fairy.gif');
+    background-repeat: no-repeat;
+    background-position-y: -350px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+.unknown{
+    background-image: url('./unknown.gif');
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+.shadow{
+    background-image: url('./shadow.gif');
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    animation-name:parpadear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes parpadear{
+    0% {filter:brightness(10%) blur(2px);}
+    50%{filter:brightness(100%)blur(1px);}
+    100%{filter:brightness(100%);}
+}
+  
+
 .container_camp{
     display: flex;
     flex-direction: column;
@@ -202,8 +505,127 @@
 
 
 @media screen and (max-width:500px){
-    .flex_night{
-        background-image: url('./night.gif');
+    .normal{
+        background-image: url('./normal.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+      }
+      
+      .fighting{
+        background-image: url('./fighting.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+      }
+      .flying{
+        background-image: url('./flying.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+      }
+      .poison{
+        background-image: url('./poison.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -200px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+      }
+      
+      .ground{
+        background-image: url('./ground.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+      }
+      
+    .rock{
+        background-image: url('./rock.gif');
+        background-repeat: no-repeat;
+        background-position-y: -100px;
+        background-position-x: -100px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+      }
+    .bug{
+        background-image: url('./bug.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -100px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+        
+      }
+    .ghost{
+        background-image: url('./ghost.gif');
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }
+      
+    .steel{
+        background-image: url('./steel.jpg');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -200px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }
+      
+    .fire{
+        background-image: url('./fire.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -200px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+        
+    }
+      
+    .water{
+        background-image: url('./water.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -200px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }
+      
+    .grass{
+        background-image: url('./grass.gif');
         background-repeat: no-repeat;
         background-position-y: -110px;
         background-position-x: -400px;
@@ -212,6 +634,94 @@
         width: 300px;
         border-radius: 5px;
     }
+    .electric{
+        background-image: url('./lightning.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -200px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }
+      
+    .psychic{
+        background-image: url('./psychic.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;;
+    }
+      
+    .ice{
+        background-image: url('./ice.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }
+      
+    .dragon{
+        background-image: url('./dragon.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    } 
+      
+    .dark{
+        background-image: url('./dark.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -200px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }
+      
+    .fairy{
+        background-image: url('./fairy.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -200px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }
+      
+    .unknown{
+        background-image: url('./unknown.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }
+      
+    .shadow{
+        background-image: url('./shadow.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    
     .flex_camp{
         background-color: aliceblue;
         height: 100px;

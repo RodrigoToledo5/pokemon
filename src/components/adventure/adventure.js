@@ -29,6 +29,8 @@ export default function Adventure(){
         dispatch(capturePokemon(true))
         
     }
+
+    
     function checkimg(poke){
         if(poke.sprites.versions["generation-v"]["black-white"].animated.front_default!==null) return true;
         else return false;
@@ -84,10 +86,18 @@ export default function Adventure(){
        else return false
    }
     
+   function backgroundBytype(types){
+  
+    if(types[0].type.name){
+        console.log(types[0].type.name)
+        return styles[types[0].type.name]
+    }
+    else return styles.flex_night;
+    }
     return(
         <>
             <div className={styles.container}>
-                <div className={styles.flex_night}>
+                <div className={pokemon.is_default&&backgroundBytype(pokemon.types)}>
                     <div className={styles.container_camp}>
                         <div className={styles.container_btn} >
                         </div>

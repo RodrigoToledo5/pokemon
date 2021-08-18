@@ -1,0 +1,10 @@
+.flex_night{
+        background-image: url('./night.gif');
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+        background-position-x: -400px;
+        background-size: cover;
+        height: 600px;
+        width: 300px;
+        border-radius: 5px;
+    }

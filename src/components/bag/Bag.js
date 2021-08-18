@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import  {pickPokemon}  from '../../actions';
 import Bot from '../bot/Home';
 import styles from './style.module.css'
+import { v4 as uuidv4 } from 'uuid';
 
 
 export default function Bag(){
@@ -12,18 +13,18 @@ export default function Bag(){
     const state = useSelector(store => store.scoreTable);
     const dispatch = useDispatch()
     function handleSelect(id){
-    dispatch(pickPokemon(id))
-    if (state.bag.find(pokemon=>pokemon.is_default===false)){
-        state.bag.map(pokemon=>pokemon.is_default=true);
-    }
-        state.bag.map((pokemon)=>{
-            if (pokemon.id===id) {
-                pokemon.is_default=!pokemon.is_default 
-            }
-            return null;
+        dispatch(pickPokemon(id))
+        if (state.bag.find(pokemon=>pokemon.is_default===false)){
+            state.bag.map(pokemon=>pokemon.is_default=true);
+        }
+            state.bag.map((pokemon)=>{
+                if (pokemon.id===id) {
+                    pokemon.is_default=!pokemon.is_default 
+                }
+                return null;
 
-        })
-}
+            })
+    }
 
 function checkimg(poke){
     if(poke.sprites.versions["generation-v"]["black-white"].animated.front_default!==null) return true;
@@ -42,21 +43,21 @@ function colorbytype(types){
 }
     return(
         <>
-        <div className="flex-cointainer__card">
+        <div key={uuidv4()} className="flex-cointainer__card">
             {state&&state.bag.map((pokemon,j)=>{
                 return(
                 <> 
-                    <span onClick={()=>handleSelect(pokemon.id)} key={j+2000} className={pokemon.is_default?colorbytype(pokemon.types):styles.card__selected}>
-                        <span key={j}>{pokemon.name[0].toUpperCase()}{pokemon.name.substring(1,pokemon.name.length)}
+                    <span onClick={()=>handleSelect(pokemon.id)} key={uuidv4()} className={pokemon.is_default?colorbytype(pokemon.types):styles.card__selected}>
+                        <span key={uuidv4()}>{pokemon.name[0].toUpperCase()}{pokemon.name.substring(1,pokemon.name.length)}
                         </span>
-                        <div key={j+3000}>
-                            <img key={j+4000} className="img_card" src={checkimg(pokemon)?showimg(pokemon):showalter(pokemon)} alt="pokemon"/>
+                        <div key={uuidv4()}>
+                            <img key={uuidv4()} className="img_card" src={checkimg(pokemon)?showimg(pokemon):showalter(pokemon)} alt="pokemon"/>
                         {j}
                         </div>
                         {pokemon.stats.map((stat,i)=>{
                             return(
                             <>
-                                <div key={i+1000} className="card_text">{stat.stat.name[0].toUpperCase()}{stat.stat.name.substring(1,stat.stat.name.length)}:{stat.base_stat}</div>
+                                <div key={uuidv4()} className="card_text">{stat.stat.name[0].toUpperCase()}{stat.stat.name.substring(1,stat.stat.name.length)}:{stat.base_stat}</div>
                             </>
                             )
                         })}
@@ -66,7 +67,7 @@ function colorbytype(types){
                 })
              }
         </div>
-             <Bot text1={text1} text2={text2} text3={text3}></Bot>
+             <Bot key={uuidv4()} text1={text1} text2={text2} text3={text3}></Bot>
         </>
     )
 }
