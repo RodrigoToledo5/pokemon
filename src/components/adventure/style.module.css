@@ -15,11 +15,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
   
   .fighting{
@@ -30,12 +25,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
   .flying{
     background-image: url('./flying.gif');
@@ -45,12 +34,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
   .poison{
     background-image: url('./poison.gif');
@@ -60,11 +43,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
   
   .ground{
@@ -75,11 +53,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
   
 .rock{
@@ -90,13 +63,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-property: all;
-    transition-duration: 3s;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
 .bug{
     background-image: url('./bug.gif');
@@ -106,12 +72,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    
   }
 .ghost{
     background-image: url('./ghost.gif');
@@ -121,11 +81,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
 .steel{
@@ -136,11 +91,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
 .fire{
@@ -151,12 +101,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    
 }
   
 .water{
@@ -167,11 +111,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
 .grass{
@@ -182,11 +121,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 .electric{
     background-image: url('./lightning.gif');
@@ -196,11 +130,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
 .psychic{
@@ -211,11 +140,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
 .ice{
@@ -226,11 +150,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
 .dragon{
@@ -241,11 +160,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 } 
   
 .dark{
@@ -256,12 +170,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-duration: 3s;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
 .fairy{
@@ -272,12 +180,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-duration: 3s;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
 .unknown{
@@ -288,12 +190,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-duration: 3s;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
 .shadow{
@@ -304,17 +200,6 @@
     height: 500px;
     width: 900px;
     border-radius: 5px;
-    transition-duration: 3s;
-    transition-timing-function: linear;
-    animation-name:parpadear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-@keyframes parpadear{
-    0% {filter:brightness(10%) blur(2px);}
-    50%{filter:brightness(100%)blur(1px);}
-    100%{filter:brightness(100%);}
 }
   
 

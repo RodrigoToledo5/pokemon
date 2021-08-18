@@ -6,24 +6,23 @@ import Contact from './components/contact/Contact';
 import Battle from './components/battle/Battle';
 import Landing from './components/landing/Landing';
 import Adventure from './components/adventure/adventure';
+import { Fragment } from 'react';
 
 function App() {
   return (
     <>
     <Switch>
-      <>
      <Route exact path="/" component={Landing}/>
       <div className="body">
-        <Route path="/Bag" component={Nav}/>
-        <Route path="/Bag" component={Bag}/>
-        <Route path="/Adventure" component={Nav}/>
-        <Route path="/Adventure" component={Adventure}/>
-        <Route path="/Battle" component={Nav}/>
-        <Route path="/Battle" component={Battle}/>
-        <Route path="/Contact" component={Nav}/>
-        <Route path="/Contact" component={Contact}/>
+        <Route exact path="/Bag" component={Nav}/>
+        <Route exact path="/Bag" component={Bag}/>
+        <Route exact path="/Adventure" component={Nav}/>
+        <Route exact path="/Adventure" component={Adventure}/>
+        <Route exact path="/Battle" component={Nav}/>
+        <Route exact path="/Battle" component={Battle}/>
+        <Route exact path="/Contact" component={Nav}/>
+        <Route exact path="/Contact" component={Contact}/>
       </div>
-      </>
     </Switch>
     </>
   );
